@@ -59,24 +59,38 @@ fun main() {
     println(returnedVal)
     println(returnedButShort)
 
-    usingFunction("Giving argument in newly created Functions.")
+//    usingFunction("Giving argument in newly created Functions.")
     var shorter = usingShortwayfunction()
     println(shorter)
     sum(1,2,3,54,6,34,345)
+
+    //Now I am going to use loops in kotlin
+    for (i in 1..10){
+        println(i)
+    }
+    for (i in 10 downTo 1){
+        print(i)
+    }
+    for (i in 1 until 20 step 2){
+        println(i)
+    }
 }
 
 // Now this function returns String
-fun usingFunction(argument: String): String {
-    println(argument)
-}
+//fun usingFunction(argument: String): String {
+//    println(argument)
+//}
 
 fun usingShortwayfunction() = "\nalsdfjdlasjflasjd"
 
-//If we use varargs it creates array of specified type we can give it as much arguments as you want.
+//If we use varargs it creates array of specified type  we can give it as much arguments as you want.
 fun sum(vararg numbers: Int) : Int {
     var counter = 0
     for(number in numbers){
         counter += number
     }
     return counter
+
+
+
 }
